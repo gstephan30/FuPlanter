@@ -26,7 +26,7 @@ Setting up the Raspberry Pi for remote control and needed libaries:<br />
 Setting up the Sensors:<br />
 <code>sudo nano /etc/modprobe.d/raspi-blacklist.conf</code><br />
 Comment out the spi-bcm2708 line so it looks like this:<br />
-#blacklist spi-bcm2708<br />
+<code>#blacklist spi-bcm2708</code><br />
 
 Then run this to make it more permanent.<br />
 <code>sudo modprobe spi-bcm2708</code><br />
