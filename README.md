@@ -4,7 +4,9 @@ FuPlanter - Garden Monitor - Weather, Ground Moisture, Plant Growth
 Twitter Overview: https://twitter.com/FuPlanter<br />
 Photo upload: https://www.flickr.com/photos/125695156@N08/<br />
 Weather Station Data: https://www.wunderground.com/personal-weather-station/dashboard?ID=ITHURING3<br />
-
+<br />
+Picture of the Prototype: https://goo.gl/photos/ya9PyC1QEwmJoXnf7<br />
+<br />
 Setting up the Raspberry Pi for remote control and needed libaries:<br />
 <code>sudo apt-get install update</code><br />
 <code>sudo apt-get install upgrade</code><br />
