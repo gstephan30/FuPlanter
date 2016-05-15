@@ -7,10 +7,10 @@ Weather Station Data: https://www.wunderground.com/personal-weather-station/dash
 
 Setting up the Raspberry Pi for remote control and needed libaries:<br />
 <code>sudo apt-get install update</code><br />
-sudo apt-get install upgrade<br />
-sudo apt-get install gnome-schedule<br />
-sudo apt-get install tightvncserver<br />
+<code>sudo apt-get install upgrade</code><br />
+<code>sudo apt-get install gnome-schedule</code><br />
+<code>sudo apt-get install tightvncserver</code><br />
 
 Command for Input promt to get VNC connection<br />
-vncserver :1<br />
+<code>vncserver :1</code><br />
 
