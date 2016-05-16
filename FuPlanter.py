@@ -11,10 +11,10 @@ now =datetime.datetime.now()
  
 #twitter setup
 import tweepy
-consumer_key="P5Qlz6I5wq3npRtOX97pSQHam"
-consumer_secret="Cd3MAmZeHnyjZ4cjWQQr19AaruvixkZAKWc1Z3yv7WqrtOb3Ym"
-access_token="2577273410-Dwquf4eLF24eHyheFq973ASoZdDX0ony7LiUYvD"
-access_token_secret="mmWx4u7W0iAlV7oROUCiaGnFntGsBxlW6tOjdE7pEIBsw"
+consumer_key="LONGKEY"
+consumer_secret="LONGSECTRET"
+access_token="INCREDIBLE_LONG_TOKEN"
+access_token_secret="INCREDIBLE_LONG_SECRET"
 #"logs in" to twitter,
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
@@ -22,8 +22,8 @@ api = tweepy.API(auth)
 
 #Flickr Setup
 import flickrapi
-api_key = '5f9e4db039b16f9dc881dc80f17ad268'
-api_secret = '7e063b8e597df0a4'
+api_key = 'LONGKEY'
+api_secret = 'SMALLERSECRET'
 flickr = flickrapi.FlickrAPI(api_key, api_secret, format='json')
 (token, frob) = flickr.get_token_part_one(perms='write')
 if not token: raw_input("Press ENTER after you authorized this program")
