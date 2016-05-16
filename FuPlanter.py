@@ -72,16 +72,16 @@ def hourlyUpdate():
     millivolts = (readadc(2)*(3300.0/1024.0))
     temp_c = (((millivolts - 100.0)/10)-40.0)
  
-    tmp1 = str(format(((temp_c * 9.0 / 5.0) + 32),'.2f')) #converts the value from the tmp sensor into a useable fahrenheit
+    tmp1 = str(format(((temp_c * 9.0 / 5.0) + 32),'.2f')) #converts to fahrenheit
  
-    tmp2 = str(format(((temp_c * 1.0) + 0.0),'.2f'))
+    tmp2 = str(format(((temp_c * 1.0) + 0.0),'.2f')) #defines celcius
     
-    ldr1 = str(format(((100-(float(readadc(1))/1024)*100)),'.2f')) #makes the value produced by the LDR into a percentage
+    ldr1 = str(format(((100-(float(readadc(1))/1024)*100)),'.2f')) #LDR data into a percentage
    
     print 'Capturing Data \n'
      
     #debug msg
-    print sampleTime,"|","MST1:",mst1,"MST2:",mst2,"MST3:",mst3,"MST4:",mst4,"LDR1:",ldr1,"TMP2:",tmp2 #prints the debug info
+    print sampleTime,"|","MST1:",mst1,"MST2:",mst2,"MST3:",mst3,"MST4:",mst4,"LDR1:",ldr1,"TMP2:",tmp2 #prints the debug 
      
     global table_number
     print 'Adding Data To MySQL-Table: ' + str(table_number)
